@@ -1,0 +1,17 @@
+{
+  "name": "jaymark-portfolio",
+  "version": "1.0.0",
+  "description": "Express app serving portfolio with image upload via multer",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}
+
+

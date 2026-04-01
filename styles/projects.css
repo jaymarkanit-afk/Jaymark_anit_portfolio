@@ -1,0 +1,111 @@
+.projects {
+  background-color: white;
+  padding: 4rem 9% 6rem;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #0a192f;
+  margin-bottom: 3rem;
+}
+
+.section-title h2 span {
+  color: #64ffda;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.project-card {
+  background-color: #f4f7fa;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  color: #0a192f;
+}
+
+.project-card p {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.project-card .btn {
+  padding: 0.6rem 1.6rem;
+  font-size: 1.3rem;
+}
+
+/* Place the upload area at the bottom, stacked */
+.project-card .upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.project-card .upload-form input[type="file"] {
+  margin-top: 8px;
+  width: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark mode */
+body.dark .projects {
+  background-color: #0a192f;
+}
+
+body.dark .section-title h2 {
+  color: #e6f1ff;
+}
+
+body.dark .project-card {
+  background-color: #0f1b33;
+  box-shadow: 0 0 15px rgba(100, 255, 218, 0.1);
+}
+
+body.dark .project-card h3 {
+  color: #e6f1ff;
+}
+
+body.dark .project-card p {
+  color: #c2d3ff;
+}
+
+body.dark .project-card .btn {
+  background-color: #071225;
+  color: #64ffda;
+  border: 1px solid #64ffda;
+}
+
+body.dark .project-card .btn:hover {
+  background-color: #64ffda;
+  color: #071225;
+}

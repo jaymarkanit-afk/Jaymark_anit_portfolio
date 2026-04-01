@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jaymark Anit</title>
+
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/about.css" />
+    <link rel="stylesheet" href="/styles/projects.css" />
+    <link rel="stylesheet" href="/styles/skills.css" />
+    <link rel="stylesheet" href="/styles/icons.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="left-section"><span class="logo-name">Jaymark</span></div>
+      <div class="middle-section">
+        <div class="info">About</div>
+        <div class="info">Projects</div>
+        <div class="info">Works</div>
+        <div class="info">Services</div>
+      </div>
+      <div class="right-section">
+        <span class="contact">Contact</span>
+        <button class="toggle">
+          <img class="moon-icon" src="/images/moon.png" />
+        </button>
+      </div>
+    </div>
+
+    <section class="home">
+      <div class="home-img">
+        <img src="<%= images.profile %>" alt="" />
+      </div>
+      <div class="home-content">
+        <h1>Hey there, It's <span>Jaymark</span></h1>
+        <h3 class="typing-text">I'm a <span></span></h3>
+        <p>
+          Here, you can explore my projects, discover the skills I've mastered,
+          and learn more about my journey as a web developer. I’m passionate
+          about creating modern, responsive, and interactive websites that
+          provide a great user experience. Feel free to explore and get in touch
+          if you’d like to collaborate!
+        </p>
+
+        <button class="view-work">View my Work</button>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-content">
+        <h2>About <span>Me</span></h2>
+        <p>
+          Hi, I’m Jaymark Anit. I’m a passionate web developer who loves
+          creating clean, modern, and functional websites. My journey in tech
+          started with curiosity, and it has grown into a full-time passion. I
+          specialize in front-end development and love experimenting with new
+          technologies.
+        </p>
+        <form action="/upload/profile" method="post" enctype="multipart/form-data" class="upload-form">
+          <input type="file" name="profileImage" accept="image/*" required />
+          <button class="btn" type="submit">Upload Profile Image</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="section-title">
+        <h2>My <span>Projects</span></h2>
+      </div>
+
+      <div class="project-container">
+        <div class="project-card">
+          <img src="<%= images.projects[0] %>" alt="Project 1" />
+          <h3>Project One</h3>
+          <p>
+            A modern, responsive personal portfolio website built to showcase my
+            skills, projects, and experience. Designed with a clean layout,
+            smooth scrolling, and interactive elements to create an engaging
+            user experience. Technologies used: HTML, CSS, JavaScript. <br />
+          </p>
+          <a href="#" class="btn">View Project</a>
+          <form action="/upload/project/0" method="post" enctype="multipart/form-data" class="upload-form">
+            <input type="file" name="projectImage" accept="image/*" required />
+            <button class="btn" type="submit">Update Thumbnail</button>
+          </form>
+        </div>
+
+        <div class="project-card">
+          <img src="<%= images.projects[1] %>" alt="Project 2" />
+          <h3>Project Two</h3>
+          <p>
+            The Library Catalog System is a web-based application designed to
+            help students and researchers easily search, browse, and manage
+            books in a digital library collection. The system provides users
+            with the ability to register, log in, and borrow books online, while
+            administrators can add, remove, and update book records.
+          </p>
+          <a href="#" class="btn">View Project</a>
+          <form action="/upload/project/1" method="post" enctype="multipart/form-data" class="upload-form">
+            <input type="file" name="projectImage" accept="image/*" required />
+            <button class="btn" type="submit">Update Thumbnail</button>
+          </form>
+        </div>
+
+        <div class="project-card">
+          <img src="<%= images.projects[2] %>" alt="Project 3" />
+          <h3>Project Three</h3>
+          <p>
+            A full-featured blogging platform where users can create, edit, and
+            delete posts. Includes a clean UI, comment functionality, and
+            responsive design for multiple devices. Ideal for sharing content
+            and managing articles online. Technologies used: HTML, CSS,
+            JavaScript.
+          </p>
+          <a href="#" class="btn">View Project</a>
+          <form action="/upload/project/2" method="post" enctype="multipart/form-data" class="upload-form">
+            <input type="file" name="projectImage" accept="image/*" required />
+            <button class="btn" type="submit">Update Thumbnail</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="section-title">
+        <h2>My <span>Skills</span></h2>
+      </div>
+
+      <div class="skills-container">
+        <div class="skill">
+          <h3>HTML & CSS</h3>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 90%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 85%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h3>React.js</h3>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 75%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h3>Node.js</h3>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 70%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="rights-reserved">
+      <div class="social-icons">
+        <a href="#" class="social-icon"
+          ><i class="fab fa-facebook-f"></i>
+          <img src="/images/facebook.png" alt="Facebook" />
+        </a>
+        <a href="#" class="social-icon"
+          ><i class="fab fa-twitter"></i>
+          <img src="/images/instagram.png" alt="Facebook"
+        /></a>
+        <a href="#" class="social-icon"
+          ><i class="fab fa-linkedin-in"></i>
+          <img src="/images/twitter.png" alt="Facebook" />
+        </a>
+        <a href="#" class="social-icon"
+          ><i class="fab fa-github"></i>
+          <img src="/images/youtube.png" alt="Facebook"
+        /></a>
+      </div>
+      <p class="all-rights">© 2025 Jaymark Anit. All rights reserved.</p>
+    </div>
+
+    <script src="/javascript/theme.js"></script>
+  </body>
+  </html>
+
+

@@ -1,0 +1,68 @@
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 4rem;
+  background-color: white;
+  padding: 30px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #64ffda;
+  background-color: #64ffda;
+  overflow: hidden;
+  transition: 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #64ffda;
+  background-color: #0a192f;
+}
+
+.social-icon:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.all-rights {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  color: black;
+  background-color: white;
+  height: auto;
+  margin-top: -10px;
+  text-align: center;
+}
+
+/* Dark mode */
+body.dark .social-icons {
+  background-color: #0a192f;
+}
+
+body.dark .social-icon {
+  background-color: #64ffda;
+  border-color: #64ffda;
+}
+
+body.dark .social-icon:hover {
+  background-color: #071225;
+}
+
+body.dark .all-rights {
+  color: #e6f1ff;
+  background-color: #0a192f;
+}
