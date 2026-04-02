@@ -58,6 +58,31 @@
   }
 }
 
+@media (max-width: 768px) {
+  .skills {
+    padding: 4rem 1rem 5rem;
+  }
+
+  .section-title h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .skill h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title h2 {
+    font-size: 1.9rem;
+  }
+
+  .skills-container {
+    gap: 1.2rem;
+  }
+}
+
 /* Dark mode */
 body.dark .skills {
   background-color: #071225;
