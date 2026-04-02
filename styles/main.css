@@ -4,6 +4,7 @@ body {
   font-size: 62.5%;
   min-height: 100vh;
   background-color: #f4f7fa;
+  overflow-x: hidden;
 }
 
 .header {
@@ -272,6 +273,133 @@ span {
   }
 }
 
+@media (max-width: 768px) {
+  main,
+  section:first-of-type {
+    margin-top: 90px;
+  }
+
+  .header {
+    padding: 14px 16px;
+    height: auto;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .left-section,
+  .middle-section,
+  .right-section {
+    flex: none;
+    padding: 0;
+  }
+
+  .left-section {
+    padding-left: 0;
+  }
+
+  .middle-section {
+    display: none;
+  }
+
+  .right-section {
+    margin-left: auto;
+    justify-content: flex-end;
+    column-gap: 8px;
+  }
+
+  .contact,
+  .toggle {
+    padding: 6px 12px;
+  }
+
+  .home {
+    margin: 0;
+    padding: 3rem 1.5rem 4rem;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home .home-content h1 {
+    font-size: 3rem;
+  }
+
+  .home-content h3 {
+    font-size: 2rem;
+  }
+
+  .home-content p {
+    font-size: 1.6rem;
+    line-height: 1.7;
+  }
+
+  .home-content .view-work {
+    margin: 2rem auto 0;
+    font-size: 1.3rem;
+  }
+
+  .home-img img {
+    width: min(68vw, 260px);
+    margin-top: 0;
+  }
+
+  .typing-text {
+    font-size: 2.1rem;
+    min-width: 0;
+  }
+
+  .typing-text span::after {
+    height: 34px;
+    right: -6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 12px 14px;
+  }
+
+  .logo-name {
+    font-size: 24px;
+  }
+
+  .contact,
+  .toggle {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+
+  .moon-icon {
+    width: 16px;
+  }
+
+  .home {
+    padding: 2.5rem 1rem 3.5rem;
+    gap: 2rem;
+  }
+
+  .home .home-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .home-content p {
+    font-size: 1.45rem;
+  }
+
+  .home-img img {
+    width: min(74vw, 230px);
+  }
+}
+
 body.dark {
   background-color: #0a192f;
   color: #e6f1ff;
@@ -377,4 +505,3 @@ body.dark .upload-form input[type="file"] {
 .upload-form .btn {
   padding: 0.6rem 1.2rem;
 }
-
