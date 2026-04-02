@@ -190,7 +190,7 @@ span {
 
 .home-img img {
   position: relative;
-  width: 25vw;
+  width: clamp(300px, 28vw, 390px);
   border-radius: 50%;
   box-shadow: 0 0 25px #64ffda;
   cursor: pointer;
