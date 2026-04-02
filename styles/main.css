@@ -22,13 +22,13 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px 24px;
   font-size: 20px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 35px;
+  height: 46px;
   background-color: #0a192f;
   color: #e6f1ff;
   z-index: 100;
@@ -37,7 +37,7 @@ img {
 /* Offset for fixed header */
 main,
 section:first-of-type {
-  margin-top: 75px;
+  margin-top: 78px;
 }
 
 .logo-name {
@@ -186,11 +186,12 @@ span {
 
 .home-img {
   border-radius: 50%;
+  flex: 0 0 auto;
 }
 
 .home-img img {
   position: relative;
-  width: clamp(300px, 28vw, 390px);
+  width: clamp(360px, 30vw, 460px);
   border-radius: 50%;
   box-shadow: 0 0 25px #64ffda;
   cursor: pointer;
